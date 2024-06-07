@@ -115,7 +115,7 @@ int main(int argc, char** argv) {
         row.push_back(result[n*i+j]);
       A.push_back(row);
     }
-    generateVTKFile("mesh/out.vtk", A, n-1, n-1, DB(1)/n, DB(1)/n);
+    generateVTKFile("out.vtk", A, n-1, n-1, DB(1)/n, DB(1)/n);
   }
     
   return 0;
