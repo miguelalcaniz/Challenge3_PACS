@@ -20,6 +20,7 @@ We aim at representing the solution as a (dense) matrix U of size n × n; the ma
 initialized with zeroes, except for the first and last rows and columns, which contain the
 boundary condition values defined in eq.
 The files consist on main.cpp, jacobi_iterattion_method.cpp, jacobi_iterattion_method.hpp and a Makefile.
+Also the writeVTK.hpp is used to print the resulting matrix in VTK format and the out.vtk file is an example of it.
 In the files of the repository we define a JacobiMethod class with a friend function which solves the Laplace equation. 
 The code is thought to be executed in several cores, and MPI functions are used to communicate data between adjacent processors.
 In the code we also use OpenMP directive to further parallelize the local computations.
