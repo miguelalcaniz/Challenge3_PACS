@@ -16,12 +16,16 @@ conditions) on the whole boundary.
 A possible approach to solve this problem is the so called Jacobi iteration method: given a uniform Cartesian decomposition of Ω consisting of n points along each coordinate direction, the goal is to find the discrete solution uij = u(xi
 , yj ), i, j = 1, . . . , n at each point of such
 Cartesian grid.
+
 We aim at representing the solution as a (dense) matrix U of size n × n; the matrix is
 initialized with zeroes, except for the first and last rows and columns, which contain the
 boundary condition values defined in eq.
+
 The files consist on main.cpp, jacobi_iterattion_method.cpp, jacobi_iterattion_method.hpp and a Makefile.
 Also the writeVTK.hpp is used to print the resulting matrix in VTK format and the out.vtk file is an example of it.
+
 In the files of the repository we define a JacobiMethod class with a friend function which solves the Laplace equation. 
+
 The code is thought to be executed in several cores, and MPI functions are used to communicate data between adjacent processors.
 In the code we also use OpenMP directive to further parallelize the local computations.
 
