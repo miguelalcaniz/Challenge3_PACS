@@ -55,7 +55,7 @@ Ensure you have the following installed:
 ## Usage 
 
 First #include "jacobi_iteration_method.hpp".
-As shown in the main.cpp file, first we initialize MPI.
+As shown in the main.cpp file, at the begining we initialize MPI.
 Then we create a JacobiMethod object giving the f, the dirichlet function (use the one in main.cpp i it is all 0) and n, the size of the nxn matrix representing the [0,1]x[0,1] domain.
 If you want to change the max_it or the tolerance use the set_tolerance() and set_max_it() methods of the class.
 After, call the solve function with the Jacobi method object as argument.
