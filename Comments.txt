@@ -1,0 +1,14 @@
+README: good job!
+Compilation: Why are there so many warnings? They seem also easy to solve..
+Scalability: works! Nice use of Isend and Irecv!
+
+Code is not working with only one core: why?
+
+Why there is no test folder with the scalability script?
+
+Results shouldnt be commented in the main file, but in a separate txt file...
+
+Why you need this line? This is weird:
+  #define DB(value) static_cast<double>(value)
+
+just define h somewhere and use it: next you will do something like i*h.
